@@ -8,9 +8,9 @@
 ## How to use this repo
 - Clone this repo: `git@github.com:danielbcarvalho/security-obfuscation-rn.git`;
 - Navigate to the downloaded folder and then run `yarn` on terminal to install dependencies;
-- Generate APK: `yarn apk` ;
+- Generate APK: `yarn apk` install on the device;
 
-### Reverse Engineering APK after install (from google store for example);
+### Reverse Engineering APK after install (from Google Play for example);
 Connect the device via USB
 - `adb devices` - list devices
 - `adb shell pm list packages` - list all installed apps
@@ -19,14 +19,14 @@ Connect the device via USB
 - `adb pull /path` - get APK (use path from previous step)
 
 ## Getting index.android.bundle
-- Extract the APK (RAR, unarchiver, etc)
+- Extract the APK (use RAR, unarchiver, etc)
 - Go to folder assets/index.android.bundle
 
 ## Obfuscation
 - [Javascript Obfuscator](https://www.npmjs.com/package/javascript-obfuscator)
 - [Obfuscator.io Metro Plugin](https://www.npmjs.com/package/obfuscator-io-metro-plugin)
 
-# metro.config.js (basic config)
+### metro.config.js (basic config)
 ```
 const jsoMetroPlugin = require('obfuscator-io-metro-plugin')(
   {
