@@ -42,7 +42,7 @@ const App = () => {
   const apiKeyGoogle = '81B155D4-E153-4CB7-88BD-B8BDCA96662';
   const capivara = {
     nome: 'Daniel',
-    pin: 'capivara1234*'
+    pin: 'capivara1234*',
   };
 
   return (

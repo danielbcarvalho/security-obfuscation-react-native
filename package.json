@@ -12,6 +12,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "javascript-obfuscator": "^4.0.0",
+    "obfuscator-io-metro-plugin": "^2.1.1",
     "react": "17.0.2",
     "react-native": "0.67.1"
   },
